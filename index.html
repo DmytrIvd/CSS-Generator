@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- HTML -->
+    <div class="container-fluid h-100 w-100">
+        <div class="row container-fluid h-100 w-100">
+            <div class="col-3 ">
+                <div class="container-fluid">
+                    <div class="control-element">
+                        <label for="BackColor" class="form-label"></label>
+                        <input type="color" id="BackColor" value="#ffffff">
+                    </div>
+                </div>
+                <div class="accordion m-2 border-2" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-controls="collapseOne">
+                                Height</br>Width</br>Border</br>BackgroundColor
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="form">
+                                    <div class="form-row">
+                                        <div class="control-element">
+                                            <label for="boxWidth" class="form-label"><b>Width</b></label>
+                                            <input type="range" class="form-range" id="boxWidth" value="25">
+                                            <input type="text" class="form-control" id="txtWidth" value="25%">
+
+                                            <label for="boxHeight" class="form-label"><b>Height</b></label>
+                                            <input type="range" class="form-range" id="boxHeight" value="25">
+                                            <input type="text" class="form-control" id="txtHeight" value="25%">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <span class="control-element form-control">
+                                            <label for="backgroundPicker" class="form-label">
+                                                <b>Background color</b></br>
+                                            </label>
+                                            <input type="color" value="#808080" id="backgroundPicker">
+                                            <label for="opacityPicker" class="d-block form-label">
+                                                <b>Opacity</b>
+                                            </label>
+                                            <input type="range" class="form-range" id="opacityPicker" min="0" max="1"
+                                                step="0.01" value="1">
+                                            <input type="text" class="form-control" id="opacityText" value="1">
+                                        </span>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="control-element">
+                                            <label for="borderTypeSelector" class="form-label mt-2"><b>Type</b></label>
+                                            <select id="borderTypeSelector" class="form-control custom-select">
+                                                <!-- dotted - Defines a dotted border
+                                            dashed - Defines a dashed border
+                                            solid - Defines a solid border
+                                            double - Defines a double border
+                                            groove - Defines a 3D grooved border. The effect depends on the border-color value
+                                            ridge - Defines a 3D ridged border. The effect depends on the border-color value
+                                            inset - Defines a 3D inset border. The effect depends on the border-color value
+                                            outset - Defines a 3D outset border. The effect depends on the border-color value
+                                            none - Defines no border
+                                            hidden - Defines a hidden border -->
+                                                <option value="dotted">Dotted</option>
+                                                <option value="dashed">Dashed</option>
+                                                <option value="solid" selected>Solid</option>
+                                                <option value="double">Double</option>
+                                                <option value="groove">Groove</option>
+                                                <option value="ridge">Ridge</option>
+                                                <option value="inset">Inset</option>
+                                                <option value="outset">Outset</option>
+                                                <option value="none">None</option>
+                                                <option value="hidden">Hidden</option>
+                                            </select>
+                                            <label for="borderThicknessSelector" class="form-label mt-2">
+                                                <b>Border thickness</b></label>
+                                            <input class="form-range" type="range" id="borderThicknessSelector" min="0"
+                                                max="100" value="1">
+                                            <input type="text" class="form-control" id="borderThickness" value="1px">
+                                            <label for="borderColorSelector" class="form-label mt-2">
+                                                <b>Border color</b></br></label>
+                                            <input type="color" id="borderColorSelector">
+                                            <label for="borderRadiusSelector" class="form-label mt-2 d-block"><b>Border
+                                                    radius:</b></label>
+                                            <input type="range" id="borderRadiusSelector" class="form-range" min="0"
+                                                max="100" value="0">
+                                            <input type="text" class="form-control" id="borderRadiusText" value="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-controls="collapseTwo">
+                                Transform
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+
+
+                                <div class="form-row">
+                                    <div class="control-element">
+
+                                        <label for="scaleSelector" class="form-label"><b>Scale</b></label>
+                                        <input class="form-range" type="range" id="scaleSelector" min="0.1" max="2"
+                                            value="1" step="0.1">
+                                        <input type="text" class="form-control" value="1" id="scaleText">
+
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="control-element">
+                                        <label for="rotateSelector" class="form-label"><b>Rotate</b></label>
+                                        <input type="range" class="form-range" id="rotateBoxSelector" value="0"
+                                            max="360">
+                                        <input type="text" class="form-control" id="rotateBoxText" value="0deg">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="control-element">
+                                        <label for="translateXSelector" class="form-label"><b>Translate X</b></label>
+                                        <input type="range" class="form-range" id="translateXSelector" value="0"
+                                            min="-100" max="100">
+                                        <input type="text" class="form-control" id="translateXBoxText" value="0%">
+
+                                        <label for="translateYSelector" class="form-label"><b>Translate Y</b></label>
+                                        <input type="range" class="form-range" id="translateYSelector" value="0"
+                                            min="-100" max="100">
+                                        <input type="text" class="form-control" id="translateYBoxText" value="0%">
+
+
+                                        <label for="translateZSelector" class="form-label"><b>Translate Z</b></label>
+                                        <input type="range" class="form-range" id="translateZSelector" value="0"
+                                            min="-100" max="100">
+                                        <input type="text" class="form-control" id="translateZBoxText" value="0%">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="control-element">
+                                        <label for="skewXSelector" class="form-label"><b>Skew X</b></label>
+                                        <input type="range" class="form-range" id="skewXSelector" value="0" min="-90"
+                                            max="90">
+                                        <input type="text" class="form-control" id="skewXBoxText" value="0deg">
+
+
+                                        <label for="skewYSelector" class="form-label"><b>Skew Y</b></label>
+                                        <input type="range" class="form-range" id="skewYSelector" value="0" min="-90"
+                                            max="90">
+                                        <input type="text" class="form-control" id="skewYBoxText" value="0px">
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="accordion-item"> </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <button id="cssCodeShowToogler" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#cssCodeModal">
+                                Copy style</button>
+                        </div>
+                        <div class="col">
+                            <button id="restartButton" type="button" class="btn btn-primary">
+                                Restart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-9">
+                <div id="boxBack" class="box-container h-100 w-100">
+                    <div id="box" class="box"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="cssCodeModal" tabindex="-1" aria-labelledby="cssCodeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cssCodeModalLabel">Css code:</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="cssCode" class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button id="ExecCopy" type="button" class="btn btn-primary">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="js/myscript.js"></script>
+</body>
+
+</html>

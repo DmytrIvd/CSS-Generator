@@ -1,0 +1,44 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.box {
+    background: gray;
+    border: 1px solid black;
+    height: 25%;
+    width: 25%;
+}
+
+.box-container {
+    border: 2px solid black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+[type='color'] {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    border: none;
+  }
+  
+  [type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+  
+  [type='color']::-webkit-color-swatch {
+    border: none;
+  }
+  
+  .control-element {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #f8f9f9;
+  }
